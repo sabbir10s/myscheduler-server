@@ -19,8 +19,8 @@ const GOOGLE_CLIENT_SECRET = "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";
 const oauth2Client = new google.auth.OAuth2(
   GOOGLE_CLIENT_ID,
   GOOGLE_CLIENT_SECRET,
-  "https://myscheduler-server.vercel.app"
-  // "http://localhost:3000"
+  // "https://myscheduler-server.vercel.app"
+  "http://localhost:3000"
 );
 
 const verifyJWT = async (req, res, next) => {
